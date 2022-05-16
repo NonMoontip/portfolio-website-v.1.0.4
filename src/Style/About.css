@@ -1,0 +1,198 @@
+.about {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: url('https://img.freepik.com/free-vector/flat-geometric-background_23-2148957201.jpg?size=626&ext=jpg&query=background&position=6&from_view=keyword&ga=GA1.2.1952102290.1650539001');
+    background-size: cover;
+}
+
+.about-flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.about-flex .about-img,
+.about-flex .about-text {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img .about-align img {
+    z-index: 10000;
+}
+
+.about-img .about-align {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-align .exp-box {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    left: 0px;
+    background-color: #037FFf;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.exp-box .exp-detail img,
+.client-box .client-detail img,
+.work-box .work-detail img {
+    width: 50px;
+    height: 50px;
+}
+
+.exp-box .exp-detail,
+.client-box .client-detail,
+.work-box .work-detail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-align .client-box {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    top: 100px;
+    right: 0px;
+    background-color: #037FFf;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.about-align .work-box {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    bottom: 0px;
+    left: 50px;
+    background-color: #037FFf;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 99999;
+}
+
+.text .flex-box {
+    display: flex;
+    width: 100%;
+    background-color: #037FFf;
+    border-radius: 20px;
+    padding: 10px;
+    bottom: 0;
+    margin-top: 100px;
+}
+
+.text .flex-box span {
+    color: #fff;
+}
+
+.flex-box .address1,
+.flex-box .address2 {
+    width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .about {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-flex .about-img,
+    .about-flex .about-text {
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+
+    .about-flex .about-text {
+        padding: 10px;
+        display: inline-block;
+        padding-top: 50px;
+    }
+
+    .about-flex .about-img {
+        width: 100%;
+    }
+
+    .about-flex .about-img img {
+        z-index: 999;
+        width: 400px;
+        height: 400px;
+    }
+
+    .about-align .exp-box {
+        width: 150px;
+        height: 50px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .exp-box .exp-detail img,
+    .client-box .client-detail img,
+    .work-box .work-detail img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .about-align .client-box {
+        width: 150px;
+        height: 50px;
+        bottom: 60px;
+        right: 0px;
+        z-index: 1000;
+        overflow: hidden;
+    }
+
+    .about-align .work-box {
+        overflow: hidden;
+        width: 150px;
+        height: 50px;
+        bottom: 0px;
+        left: 10px;
+        z-index: 1000;
+    }
+
+    .text .flex-box {
+        flex-direction: column;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .flex-box .address1,
+    .flex-box .address2 {
+        width: 100%;
+    }
+}

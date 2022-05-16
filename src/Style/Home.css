@@ -1,0 +1,248 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url('https://img.freepik.com/free-vector/flat-geometric-background_23-2148957201.jpg?size=626&ext=jpg&query=background&position=6&from_view=keyword&ga=GA1.2.1952102290.1650539001');
+    background-size: cover;
+}
+
+.container-flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.text-box,
+.img-box {
+    width: 50%;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-box h1 {
+    font-family: 'Koulen', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100px;
+    color: #fff;
+    background: linear-gradient(to right, #037FFf, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-align {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-box img {
+    z-index: 999;
+}
+
+.img-align .box1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 100px;
+    top: 100px;
+}
+
+.img-align .box2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 100px;
+    bottom: 200px;
+    transform: rotate(-5deg);
+}
+
+.img-align .box3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 100px;
+    transform: rotate(20deg);
+}
+
+.img-align .box4 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 100px;
+    bottom: 100px;
+    transform: rotate(-10deg);
+}
+
+@keyframes moves {
+    0% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes move1 {
+    0% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+.img-align .box1 img,
+.img-align .box2 img {
+    animation: moves 3s infinite;
+}
+
+.img-align .box3 img,
+.img-align .box4 img {
+    animation: move1 3s infinite;
+}
+
+.img-align .box1 img,
+.img-align .box2 img,
+.img-align .box3 img,
+.img-align .box4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-align .circle1 {
+    top: 100px;
+    right: 0px;
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    border-radius: 20px;
+    background: #037FFf;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.img-align .circle2 {
+    bottom: 50px;
+    left: 0px;
+    position: absolute;
+    width: 200px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: #037FFf;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 999;
+}
+
+.circle1 h5,
+.circle2 h5 {
+    width: 50%;
+}
+
+.circle1 img,
+.circle2 img {
+    width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .home {
+        width: 100%;
+    }
+
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .text-box,
+    .img-box {
+        width: 100%;
+    }
+
+    .text-box {
+        padding: 0 20px;
+    }
+
+    .text-box h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .text-box h5 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .img-align .box1 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 50px;
+        top: 100px;
+    }
+
+    .img-align .box2 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 50px;
+        bottom: 200px;
+        transform: rotate(-5deg);
+    }
+
+    .img-align .box3 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 50px;
+        transform: rotate(20deg);
+    }
+
+    .img-align .box4 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 40px;
+        bottom: 100px;
+        transform: rotate(-10deg);
+    }
+}

@@ -1,0 +1,40 @@
+.skills {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.skills .front-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-flex img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.front-flex img:hover {
+    transform: translateY(-10px);
+    filter: grayscale(0%);
+}
+
+
+@media screen and (max-width: 900px) {
+    .skills {
+        height: 350px;
+    }
+
+    .front-flex img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+}

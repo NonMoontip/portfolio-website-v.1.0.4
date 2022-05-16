@@ -1,0 +1,105 @@
+.footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.footer .footer-in {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-in .foot-text {
+    position: relative;
+    width: 50%;
+}
+
+.footer .footer-in .foot-text .text-set {
+    padding: 50px;
+}
+
+.footer .footer-in .foot-text p {
+    padding: 5px 0;
+}
+
+.footer .footer-in .foot-text .social {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social i {
+    padding: 0 20px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.fi-brands-facebook {
+    color: #4267B2;
+
+}
+
+.fi-brands-instagram {
+    color: #E1306C;
+}
+
+.fi-brands-linkedin {
+    color: #2867B2;
+}
+
+.fi-brands-line {
+    color: #00B900;
+}
+
+.social i:hover {
+    transform: translateY(-20px);
+}
+
+.footer .footer-in iframe {
+    padding: 20px;
+    width: 50%;
+    height: 450px;
+    border: none;
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+
+    .footer .footer-in {
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .footer .footer-in .foot-text {
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+
+    .footer .footer-in .foot-text .text-set {
+        padding: 10px;
+    }
+
+    .footer .footer-in .foot-text p {
+        padding: 5px 0;
+    }
+
+    .footer .footer-in iframe {
+        width: 100%;
+        height: 50%;
+    }
+}
